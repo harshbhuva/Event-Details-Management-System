@@ -1,0 +1,40 @@
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Admin</title>
+<style>
+.mydes
+{
+	font-size:30px;
+	color:#FFF;
+	cursor:hand;
+}
+</style>
+<script>
+function show(a)
+{
+	var e=document.getElementById("abc");
+	e.innerHTML="<object type='text/html' data="+a+" width=1535 height=650>";
+}
+</script>
+</head>
+<body>
+<div style="position:absolute; top:0; left:0; width:100%; height:210; background-color:#06F">
+<div style="position:absolute; top:5; left:5; width:388; height:198; background-image:url(logo.jpg)"></div>
+<div style="position:absolute; top:50; left:450; font-size:80pt; color:#FFF">College Events</div>
+<div style="position:absolute; top:190; width:100; height:20;left:95%"><a href="admin.html">HOME</a></div>
+</div>
+<div id="abc" style="position:absolute; top:210; left:0; width:100%; height:700; background-color:#0FF">
+<h1 style="position:absolute; font-size:50; left:400">Welcome to Admin Page</h1>
+<br><br><br><br><br><h1>
+To update info of seminars,<span class="mydes" onClick="show('adminsem.html')"> Click here</span>.<br>
+To update info of conferences,<span class="mydes" onClick="show('admincon.html')"> Click here</span>.<br>
+To update info of technical events,<span class="mydes" onClick="show('admintech.html')"> Click here</span>.<br>
+To update info of sports,<span class="mydes" onClick="show('adminspo.html')"> Click here</span>.<br>
+To update info of cultural events,<span class="mydes" onClick="show('admincul.html')"> Click here</span>.<br>
+<br><br><br><br>
+To view records,<span class="mydes"><a href="index.html"> Click here</a></span>.<br>
+</h1>
+</div>
+</body>
+</html>
